@@ -1,10 +1,12 @@
+WorldEnvironment
+CollisionShape3D
+Area3D
 PathFollow3D
 Timer
 Path3D
 MeshInstance3D
 Node3D
 VisibleOnScreenNotifier3D
-CollisionShape3D
 CharacterBody3D
 Marker3D
 Camera3D

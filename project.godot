@@ -63,5 +63,6 @@ jump={
 
 [rendering]
 
+renderer/rendering_method="mobile"
 quality/driver/driver_name="GLES2"
 quality/filters/msaa=3

@@ -13,6 +13,7 @@ config_version=5
 config/name="Squash the Creeps (3D)"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.0")
+boot_splash/show_image=false
 config/icon="res://icon.png"
 
 [display]
@@ -53,6 +54,12 @@ jump={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[layer_names]
+
+3d_physics/layer_1="player"
+3d_physics/layer_2="enemies"
+3d_physics/layer_3="world"
 
 [rendering]
 

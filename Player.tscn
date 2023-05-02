@@ -3,10 +3,11 @@
 [ext_resource type="Script" path="res://Player.gd" id="1_38e5p"]
 [ext_resource type="PackedScene" uid="uid://drf7so08lwtm0" path="res://art/player.glb" id="1_p2ykv"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_13tnv"]
-size = Vector3(2, 2, 2)
+[sub_resource type="SphereShape3D" id="SphereShape3D_0jkx7"]
+radius = 1.0
 
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 6
 script = ExtResource("1_38e5p")
 
 [node name="Pivot" type="Node3D" parent="."]
@@ -14,4 +15,4 @@ script = ExtResource("1_38e5p")
 [node name="Character" parent="Pivot" instance=ExtResource("1_p2ykv")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_13tnv")
+shape = SubResource("SphereShape3D_0jkx7")

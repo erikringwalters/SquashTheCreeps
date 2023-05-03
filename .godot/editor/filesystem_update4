@@ -1,4 +1,7 @@
 res://Main.tscn
 res://Player.tscn
 res://mob.tscn
-res://ToonBall.tscn
+res://ScoreLabel.gd
+res://Player.gd
+res://mob.gd
+res://Main.gd

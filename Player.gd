@@ -32,6 +32,11 @@ func _physics_process(delta):
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
 		$Pivot.look_at(position + direction, Vector3.UP)
+		$AnimationPlayer.speed_scale = 4
+	else:
+		$AnimationPlayer.speed_scale = 1
+
+
 	
 	# Ground Velocity
 	target_velocity.x = direction.x * speed
@@ -66,11 +71,6 @@ func _physics_process(delta):
 					squash_timer.start()
 					mob.squash()
 					target_velocity.y = bounce_impulse
-	
-	if direction != Vector3.ZERO:
-		$AnimationPlayer.speed_scale = 4
-	else:
-		$AnimationPlayer.speed_scale = 1
 	
 	$Pivot.rotation.x = PI / 6 * velocity.y / jump_impulse
 	
